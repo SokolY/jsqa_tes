@@ -7,7 +7,7 @@
     cd [project root]~/dev/jsqa/src/app/lessons/01
    node l-01.js
 */
-ф
+
 // JavaScript consists of executable code and comments:
 
 // 1. Executable Code:
@@ -382,21 +382,26 @@ console.log('\nLesson 01 - Homework:\n\n!!! Please answer the questions in this 
 
 // Task 01.01 - 1 point
 // Question: Can JavaScript file contain non-executable code?
-// Answer: TODO
+// Answer: Yes, comments in the code is not
 
 // Task 01.02 - 2 points
 // Question: How we can tell the JS interpreter to use strict mode?
-// Answer: TODO
+// Answer: using command 'use strict'
 
 // Task 01.03 - 2 points
 // Q: What simple data types are used in JS?
-// A: TODO
+// A: TODO Simple data types in JS are: number, boolean, string
 
 // Task 01.04 - 2 points
 // Q: What complex data types are used in JS?
-// A: TODO
+// A: TODO Complex data types in JS are: object, array.
 
 // Task 01.05 - 3 points
 // Q: Please write a function which calculates the difference between two numbers
 // A: TODO
+// function differ(x, y){
+//     return x - y;
+// }
+//Example:
+// differ(10, 3);
 // Lesson 01 Homework - End
