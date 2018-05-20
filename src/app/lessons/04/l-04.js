@@ -530,6 +530,9 @@ console.log('\nTask 04.01');
 // TODO: пиши код тут:
 
 let primeNumbers;
+primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
+primeNumbers.push(31);
+console.log(primeNumbers[10]);
 
 // Цей код тестує завдання:
 if (primeNumbers && primeNumbers.length === 11) {
@@ -545,8 +548,13 @@ console.log('\nTask 04.02');
 // Напиши функцію sortNumbers і використай її у методі sort масиву primeNumbers для того, 
 // щоб відсортувати його елементи у зворотньому порядку.
 // TODO: пиши код тут:
+function reverseOrder(a, b){
+	return b -  a;
+}
+primeNumbers.sort(reverseOrder);
+console.log(primeNumbers[0]);
 // Цей код тестує завдання:
-if (primeNumbers && primeNumbers[0] && primeNumbers[0] === 31) {
+if (primeNumbers && [0] && primeNumbers[0] === 31) {
 	console.log('Task 04.02 is DONE! ');
 } else {
 	console.log('Please make Task 04.02');
@@ -560,6 +568,9 @@ console.log('\nTask 04.03');
 // Points: 2
 // За допомогою методу splice виріж з масиву елементи з другого по третій і при цьому заміни їх на рядок 'foo'.
 // TODO: пиши код тут:
+console.log(primeNumbers[2]);
+primeNumbers.splice(1, 2, 'foo', 'foo');
+console.log(primeNumbers[2]);
 if (primeNumbers && primeNumbers[2] === 'foo') {
 	console.log('Task 04.03 is DONE! ');
 } else {
@@ -576,11 +587,12 @@ console.log('\nTask 04.04');
 // щоб додати до кожного елементу масиву [21, 63, 84] число '42'
 // TODO: пиши свій код тут:
 console.log('Please make Task 04.04');
-
-
-
-
-
+function addValue(value, index, arrey){
+	if (index == 21 || index == 63 || index == 84){
+		value += 42;
+	}
+}
+primeNumbers.forEach(addValue);
 console.log('\nTask 04.05');
 // Points: 3
 // Дано масив crazyMix, до якого увійшли елементи різних типів:
@@ -591,7 +603,13 @@ var crazyMix = [1, '1', true, 2, '02', 3, '0', '10', 11, [], {}, function() {}];
 
 function arrayCleanUp(arrayToCleanUp) {
 	var cleanedUp = arrayToCleanUp;
-	// TODO: пиши свій код тут:
+
+	var result = cleanedUp.filter(
+		function (value) {
+			return (typeof value === 'number');
+		}
+	);
+	cleanedUp.filter(result);
 	return cleanedUp;
 }
 
