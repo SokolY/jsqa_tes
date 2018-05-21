@@ -604,12 +604,12 @@ var crazyMix = [1, '1', true, 2, '02', 3, '0', '10', 11, [], {}, function() {}];
 function arrayCleanUp(arrayToCleanUp) {
 	var cleanedUp = arrayToCleanUp;
 
-	var result = cleanedUp.filter(
+	cleanedUp = cleanedUp.filter(
 		function (value) {
 			return (typeof value === 'number');
 		}
 	);
-	cleanedUp.filter(result);
+	// return cleanedUp;
 	return cleanedUp;
 }
 
