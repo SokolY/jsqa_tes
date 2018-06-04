@@ -276,8 +276,8 @@
 	}
 
 	// TODO: дай відповідь тут:
-	// перший випадок функція не є замиканням
-	// другий випадок функція не є замиканням
+	// перший випадок функція є замиканням
+	// другий випадок функція є замиканням
 	console.log('\nTask 07.02');
 	console.log('\n\t Please implement this task');
 
@@ -312,7 +312,7 @@
 		return internalFunction;
 	}
 
-	console.log(iAmClosure());
+	console.log(iAmClosure()());
 	// TODO: пиши відповідь словами тут:
 	
 	// WRONG 1:
@@ -360,6 +360,7 @@
 	// що повертається як функція-замикання.
 	// TODO: пиши тут:
 
+
 	function iAmClosureFour() {
 		var iAmEnclosed = {
 			property: 'secret',
@@ -377,4 +378,5 @@
 	var disclosedInternalFour = accessEnclosed();
 
 })();
+
 // Завершення глобальної анонімної функції
